@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,138 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iosSketchingApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IXC-Fw-fgR">
+                                <rect key="frame" x="12.5" y="627" width="350" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhr-bS-J1P">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Lmy-sM-Et3"/>
+                                            <constraint firstAttribute="width" constant="30" id="rsW-tW-wgs"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="blackButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sB-A5-Ojv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c58-rX-8NN">
+                                        <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="5dl-JJ-eit"/>
+                                            <constraint firstAttribute="height" constant="30" id="mSg-UD-hKe"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="blueButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgy-rz-nwH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-nC-ZkN">
+                                        <rect key="frame" x="80" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="HNP-zf-OLs"/>
+                                            <constraint firstAttribute="height" constant="30" id="S4P-bx-dGu"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="brownButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Maz-5Y-PMG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-EP-KPy">
+                                        <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Ss6-bp-Xo2"/>
+                                            <constraint firstAttribute="height" constant="30" id="qBJ-e4-cQP"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="cyanButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aqo-oB-lyU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-X8-Zvv">
+                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EXe-sz-fJz"/>
+                                            <constraint firstAttribute="width" constant="30" id="G0p-91-0kZ"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="greenButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdp-Xn-FK6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-IE-fMy">
+                                        <rect key="frame" x="200" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Tdk-RC-Tc1"/>
+                                            <constraint firstAttribute="height" constant="30" id="bZg-1R-rfW"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="magentaButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pmt-y7-a8w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJS-Kx-alJ">
+                                        <rect key="frame" x="240" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="95K-ih-0WE"/>
+                                            <constraint firstAttribute="height" constant="30" id="WF8-Bn-H6g"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="orangeButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ag-3J-Jvp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-ff-bfU">
+                                        <rect key="frame" x="280" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="qPH-Ln-yS6"/>
+                                            <constraint firstAttribute="width" constant="30" id="xb3-83-QIS"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="purpleButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAz-uz-677"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkw-gd-YgF">
+                                        <rect key="frame" x="320" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="DEc-t5-QMP"/>
+                                            <constraint firstAttribute="height" constant="30" id="fCh-5V-Qws"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="redButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pxR-jc-WUr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IXC-Fw-fgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TLG-5a-uHy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IXC-Fw-fgR" secondAttribute="bottom" constant="10" id="hcB-5b-Q8g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blackButton" destination="Nhr-bS-J1P" id="akW-5s-lwC"/>
+                        <outlet property="blueButton" destination="c58-rX-8NN" id="lje-aR-p2z"/>
+                        <outlet property="brownButton" destination="qRN-nC-ZkN" id="1lX-TH-BXV"/>
+                        <outlet property="cyanButton" destination="mD7-EP-KPy" id="FyT-Ty-Vue"/>
+                        <outlet property="greenButton" destination="tGE-X8-Zvv" id="tio-zW-dMo"/>
+                        <outlet property="magentaButton" destination="jhV-IE-fMy" id="GHS-gt-Mor"/>
+                        <outlet property="orangeButton" destination="XJS-Kx-alJ" id="aI7-56-AWg"/>
+                        <outlet property="purpleButton" destination="Ja9-ff-bfU" id="698-Rk-nPR"/>
+                        <outlet property="redButton" destination="Hkw-gd-YgF" id="tmj-Cp-H4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="102.99850074962519"/>
         </scene>
     </scenes>
 </document>
